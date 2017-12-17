@@ -40,7 +40,7 @@ public class Main{
         try {
             //Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/test.fxml"));
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getClass().getClassLoader().getResource("test.fxml"));
+            loader.setLocation(getClass().getResource("test.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             jfxPanel.setScene(scene);
