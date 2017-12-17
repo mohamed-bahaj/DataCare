@@ -27,7 +27,7 @@ public class Main{
         swingButtons.add(exitButton);
         frame.add(swingButtons, BorderLayout.SOUTH);
 
-        frame.setSize(300, 200);
+        frame.setSize(600, 400);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -40,7 +40,7 @@ public class Main{
         try {
             //Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/test.fxml"));
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getClass().getClassLoader().getResource("test.fxml"));
+            loader.setLocation(getClass().getResource("test.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             jfxPanel.setScene(scene);
