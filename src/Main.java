@@ -27,7 +27,7 @@ public class Main{
         swingButtons.add(exitButton);
         frame.add(swingButtons, BorderLayout.SOUTH);
 
-        frame.setSize(300, 200);
+        frame.setSize(600, 400);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
